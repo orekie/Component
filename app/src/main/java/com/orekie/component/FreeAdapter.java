@@ -16,9 +16,6 @@ import java.util.List;
 public class FreeAdapter extends RecyclerView.Adapter<FreeAdapter.FreeViewHolder> {
 
     private Context context;
-    /*
-    * test
-    * */
 
     private int textViewId = R.layout.test_text_view;
     private int imageViewId = R.layout.test_image_view;
@@ -56,7 +53,6 @@ public class FreeAdapter extends RecyclerView.Adapter<FreeAdapter.FreeViewHolder
 
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(context, "index->" + ((ViewGroup) v.getParent()).indexOfChild(v), Toast.LENGTH_SHORT).show();
                         dataSet.add(((ViewGroup) v.getParent()).indexOfChild(v), new TextComponent());
                         notifyDataSetChanged();
                     }
