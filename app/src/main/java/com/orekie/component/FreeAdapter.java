@@ -16,6 +16,7 @@ import java.util.List;
 public class FreeAdapter extends RecyclerView.Adapter<FreeAdapter.FreeViewHolder> {
 
     private Context context;
+    /**/
 
     private int textViewId = R.layout.test_text_view;
     private int imageViewId = R.layout.test_image_view;
